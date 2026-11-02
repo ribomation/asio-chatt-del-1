@@ -80,7 +80,7 @@ client-simulator/chat-sim.py --clients 200 --messages 20
 Trådar medan simulatorn kör. N klienter ger N + 2 trådar (accept, broadcast och N läsare):
 
 ```sh
-ps -T -p $(pgrep -f build/chatserver-multi-threaded) | wc -l
+ps -T -p $(pgrep -f chatserver-multi-threaded) | tail -n +2 | wc -l
 ```
 
 Head-of-line blocking: `asio::write` blockerar, så en klient som inte läser stoppar broadcast för
