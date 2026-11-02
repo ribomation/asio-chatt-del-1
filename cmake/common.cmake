@@ -26,3 +26,7 @@ message(STATUS "Boost ${Boost_VERSION} från ${Boost_ROOT}")
 add_library(asio_common INTERFACE)
 add_library(asio::common ALIAS asio_common)
 target_link_libraries(asio_common INTERFACE Boost::headers Threads::Threads)
+
+# Utan denna innehåller system_error::what() sökväg, radnummer och funktionsnamn
+# från Asios interna headers. Med den blir felmeddelandet bara "connect: Connection refused".
+target_compile_definitions(asio_common INTERFACE BOOST_ASIO_DISABLE_ERROR_LOCATION)
