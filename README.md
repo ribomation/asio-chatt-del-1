@@ -1,6 +1,6 @@
 # asio-chatt-del-1
 
-Demoprogram till artikeln **[Bygg en chattserver med Boost.Asio, del 1: Grunderna och synkron I/O](https://www.ribomation.se/blog/2026/bygg-en-chattserver-med-boost-asio-del-1/)**
+Demoprogram till artikeln **[Bygg en chattserver med Boost.Asio, del 1: Grunderna och synkron I/O](https://www.ribomation.se/blog/2026/chattserver-boost-asio-del-1/)**
 på [ribomation.se](https://www.ribomation.se/blog/).
 
 Artikeln är den första av fem om Boost.Asio. Genom serien byggs en chattserver som till slut har
